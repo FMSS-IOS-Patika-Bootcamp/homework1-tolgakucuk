@@ -27,7 +27,6 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UITableViewDelegate {
     
-    
 }
 
 //MARK: - TableViewDataSource
@@ -42,6 +41,5 @@ extension MainViewController: UITableViewDataSource {
         cell.textLabel?.text = String(indexPath.row)
         return cell
     }
-
 }
 
