@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Pet {
+    var name: String? 
+    var age: Int?
+    var description: String?
+}
