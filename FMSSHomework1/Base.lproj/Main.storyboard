@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,37 +17,148 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lFw-19-LsI">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ugI-C7-uNO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                </tableView>
-                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2c4-RC-EbO">
+                                <rect key="frame" x="358" y="806" width="40" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="95S-OR-UPr"/>
+                                    <constraint firstAttribute="height" constant="40" id="NF7-HV-WLr"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                <connections>
+                                    <action selector="didPlusButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zci-DP-mRV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvG-Ls-URu">
+                                <rect key="frame" x="40" y="84" width="125.5" height="34.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klp-MS-fjv">
+                                <rect key="frame" x="40" y="138.5" width="103" height="34.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lp-Q8-fXJ">
+                                <rect key="frame" x="170.5" y="84" width="203.5" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqj-5p-MWb">
+                                <rect key="frame" x="147" y="139" width="227" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lFw-19-LsI" secondAttribute="trailing" id="PQt-80-uwu"/>
-                            <constraint firstItem="lFw-19-LsI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kmd-aD-Pi8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lFw-19-LsI" secondAttribute="bottom" id="lIL-Oh-Fi8"/>
-                            <constraint firstItem="lFw-19-LsI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zOf-4C-L2G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Lp-Q8-fXJ" secondAttribute="trailing" constant="40" id="C1q-Ka-PBC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2c4-RC-EbO" secondAttribute="trailing" constant="16" id="F76-0A-2Bq"/>
+                            <constraint firstItem="3Lp-Q8-fXJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="M0J-Z8-hd1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2c4-RC-EbO" secondAttribute="bottom" constant="16" id="NDP-LX-kdz"/>
+                            <constraint firstItem="tvG-Ls-URu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Skg-Kg-Ezf"/>
+                            <constraint firstItem="Jqj-5p-MWb" firstAttribute="top" secondItem="3Lp-Q8-fXJ" secondAttribute="bottom" constant="20" id="iX5-BV-3d3"/>
+                            <constraint firstItem="Jqj-5p-MWb" firstAttribute="leading" secondItem="klp-MS-fjv" secondAttribute="trailing" constant="4" id="kC6-KC-j1N"/>
+                            <constraint firstItem="klp-MS-fjv" firstAttribute="top" secondItem="tvG-Ls-URu" secondAttribute="bottom" constant="20" id="mI7-8H-GpQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jqj-5p-MWb" secondAttribute="trailing" constant="40" id="n3t-Mw-vin"/>
+                            <constraint firstItem="3Lp-Q8-fXJ" firstAttribute="leading" secondItem="tvG-Ls-URu" secondAttribute="trailing" constant="5" id="qRI-sM-lba"/>
+                            <constraint firstItem="tvG-Ls-URu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="sIq-23-Pmz"/>
+                            <constraint firstItem="klp-MS-fjv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="yBT-VR-p9V"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="ugI-C7-uNO" id="PTU-8K-NpZ"/>
+                        <outlet property="petAgeLabel" destination="Jqj-5p-MWb" id="L7f-ND-5oR"/>
+                        <outlet property="petNameLabel" destination="3Lp-Q8-fXJ" id="maq-yN-eEA"/>
+                        <outlet property="plusButton" destination="2c4-RC-EbO" id="eY7-um-tSw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="70"/>
+            <point key="canvasLocation" x="-130.43478260869566" y="26.785714285714285"/>
+        </scene>
+        <!--Add Pet View Controller-->
+        <scene sceneID="JOS-hL-URu">
+            <objects>
+                <viewController storyboardIdentifier="AddPetViewController" id="IQw-DY-T68" customClass="AddPetViewController" customModule="FMSSHomework1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6p1-qb-2Nh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Your Pet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9L-aN-LjP">
+                                <rect key="frame" x="8" y="52" width="398" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your pet name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v6h-Bd-jeF">
+                                <rect key="frame" x="40" y="113" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your pet age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OKM-o4-EcV">
+                                <rect key="frame" x="40" y="167" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzh-wd-hBa">
+                                <rect key="frame" x="40" y="301" width="334" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="srp-wq-tPr"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="didSaveButtonTapped:" destination="IQw-DY-T68" eventType="touchUpInside" id="mad-xg-pHt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R3g-dR-fK1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R3g-dR-fK1" firstAttribute="trailing" secondItem="OKM-o4-EcV" secondAttribute="trailing" constant="40" id="Ehd-2e-Twp"/>
+                            <constraint firstItem="R3g-dR-fK1" firstAttribute="trailing" secondItem="v6h-Bd-jeF" secondAttribute="trailing" constant="40" id="IAc-DU-7Bd"/>
+                            <constraint firstItem="c9L-aN-LjP" firstAttribute="top" secondItem="R3g-dR-fK1" secondAttribute="top" constant="8" id="OUK-ao-GKX"/>
+                            <constraint firstItem="R3g-dR-fK1" firstAttribute="trailing" secondItem="vzh-wd-hBa" secondAttribute="trailing" constant="40" id="Vou-hw-9FP"/>
+                            <constraint firstItem="v6h-Bd-jeF" firstAttribute="top" secondItem="c9L-aN-LjP" secondAttribute="bottom" constant="20" id="XnB-nZ-dcx"/>
+                            <constraint firstItem="c9L-aN-LjP" firstAttribute="leading" secondItem="R3g-dR-fK1" secondAttribute="leading" constant="8" id="f1l-79-bTp"/>
+                            <constraint firstItem="vzh-wd-hBa" firstAttribute="top" secondItem="OKM-o4-EcV" secondAttribute="bottom" constant="100" id="jJN-K9-hJV"/>
+                            <constraint firstItem="R3g-dR-fK1" firstAttribute="trailing" secondItem="c9L-aN-LjP" secondAttribute="trailing" constant="8" id="lCc-Te-yym"/>
+                            <constraint firstItem="v6h-Bd-jeF" firstAttribute="leading" secondItem="R3g-dR-fK1" secondAttribute="leading" constant="40" id="lOd-to-Pvu"/>
+                            <constraint firstItem="vzh-wd-hBa" firstAttribute="leading" secondItem="R3g-dR-fK1" secondAttribute="leading" constant="40" id="oKk-bM-gpP"/>
+                            <constraint firstItem="OKM-o4-EcV" firstAttribute="top" secondItem="v6h-Bd-jeF" secondAttribute="bottom" constant="20" id="rS4-MF-Alw"/>
+                            <constraint firstItem="OKM-o4-EcV" firstAttribute="leading" secondItem="R3g-dR-fK1" secondAttribute="leading" constant="40" id="usS-JW-3If"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="petAgeLabel" destination="OKM-o4-EcV" id="2k5-Rj-jr9"/>
+                        <outlet property="petNameLabel" destination="v6h-Bd-jeF" id="a1R-gQ-gN9"/>
+                        <outlet property="saveButton" destination="vzh-wd-hBa" id="dll-nO-ac4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OsP-rC-7Gx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="19"/>
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

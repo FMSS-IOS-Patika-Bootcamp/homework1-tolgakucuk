@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD9D48DD28CCDC40003975BE /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D48DC28CCDC40003975BE /* AddPetViewController.swift */; };
 		FDC2334728C7E01C0044AF63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC2334628C7E01C0044AF63 /* AppDelegate.swift */; };
 		FDC2334928C7E01C0044AF63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC2334828C7E01C0044AF63 /* SceneDelegate.swift */; };
 		FDC2334B28C7E01C0044AF63 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC2334A28C7E01C0044AF63 /* MainViewController.swift */; };
 		FDC2334E28C7E01C0044AF63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC2334C28C7E01C0044AF63 /* Main.storyboard */; };
 		FDC2335028C7E01F0044AF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC2334F28C7E01F0044AF63 /* Assets.xcassets */; };
 		FDC2335328C7E01F0044AF63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC2335128C7E01F0044AF63 /* LaunchScreen.storyboard */; };
-		FDC2335C28C7E1840044AF63 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC2335B28C7E1840044AF63 /* Pet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD9D48DC28CCDC40003975BE /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
 		FDC2334328C7E01C0044AF63 /* FMSSHomework1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMSSHomework1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC2334628C7E01C0044AF63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDC2334828C7E01C0044AF63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		FDC2334F28C7E01F0044AF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDC2335228C7E01F0044AF63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDC2335428C7E01F0044AF63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDC2335B28C7E1840044AF63 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				FDC2335D28C91B1B0044AF63 /* ViewController */,
-				FDC2335A28C7E1710044AF63 /* Model */,
 				FDC2334628C7E01C0044AF63 /* AppDelegate.swift */,
 				FDC2334828C7E01C0044AF63 /* SceneDelegate.swift */,
 				FDC2334C28C7E01C0044AF63 /* Main.storyboard */,
@@ -70,18 +69,11 @@
 			path = FMSSHomework1;
 			sourceTree = "<group>";
 		};
-		FDC2335A28C7E1710044AF63 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FDC2335B28C7E1840044AF63 /* Pet.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		FDC2335D28C91B1B0044AF63 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				FDC2334A28C7E01C0044AF63 /* MainViewController.swift */,
+				FD9D48DC28CCDC40003975BE /* AddPetViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -157,8 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD9D48DD28CCDC40003975BE /* AddPetViewController.swift in Sources */,
 				FDC2334B28C7E01C0044AF63 /* MainViewController.swift in Sources */,
-				FDC2335C28C7E1840044AF63 /* Pet.swift in Sources */,
 				FDC2334728C7E01C0044AF63 /* AppDelegate.swift in Sources */,
 				FDC2334928C7E01C0044AF63 /* SceneDelegate.swift in Sources */,
 			);
