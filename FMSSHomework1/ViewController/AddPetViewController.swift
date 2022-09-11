@@ -22,11 +22,28 @@ class AddPetViewController: UIViewController {
     }
     
     @IBAction func didSaveButtonTapped(_ sender: Any) {
-      
+        handleSaveButtonClicked(name: petNameLabel.text, age: petAgeLabel.text)
+    }
+    
+    private func handleSaveButtonClicked(name: String?, age: String?) {
+        guard let name = name, !name.isEmpty else {
+            showAlert(withMessage: "Please enter your pet name.")
+            return
+        }
+        guard let age = age, !age.isEmpty else {
+            showAlert(withMessage: "Please enter your pet age.")
+            return
+        }
         
-        completionHandler?(petNameLabel.text, petAgeLabel.text)
-        
+        completionHandler?(name, age)
         dismiss(animated: true, completion: nil)
+    }
+    
+    private func showAlert(withMessage message: String?) {
+        guard let message = message else {return}
+        let alert = UIAlertController(title: "Warning", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
+        present(alert, animated: true)
     }
     
 }
